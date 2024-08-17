@@ -1,5 +1,5 @@
 export default class HolbertonCourse {
-  constructor(name, length, students) {
+  constructor (name, length, students) {
     if (typeof name !== 'string') {
       throw new TypeError('Name must be a string');
     }
@@ -15,11 +15,11 @@ export default class HolbertonCourse {
   }
 
   // name attribute
-  get name() {
+  get name () {
     return this._name;
   }
 
-  set name(newName) {
+  set name (newName) {
     if (typeof newName === 'string') {
       this._name = newName;
     } else {
@@ -28,11 +28,11 @@ export default class HolbertonCourse {
   }
 
   // length attribute
-  get length() {
+  get length () {
     return this._length;
   }
 
-  set length(newLength) {
+  set length (newLength) {
     if (typeof newLength === 'number') {
       this._length = newLength;
     } else {
@@ -41,11 +41,11 @@ export default class HolbertonCourse {
   }
 
   // students attribute
-  get students() {
+  get students () {
     return this._students;
   }
 
-  set students(newStudents) {
+  set students (newStudents) {
     if (Array.isArray(newStudents)) {
       this._students = newStudents;
     } else {

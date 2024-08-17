@@ -1,4 +1,4 @@
-export default function appendedToEachArrayValue(array, appendString) {
+export default function appendedToEachArrayValue (array, appendString) {
   const newArray = [];
 
   for (const value of array) {
