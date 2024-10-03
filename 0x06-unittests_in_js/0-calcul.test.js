@@ -1,7 +1,6 @@
 /* test cases for calcul function */
-const { it, describe } = require('mocha');
-const assert = require('assert');
-const calculateNumber = require('./0-calcul');
+import assert from 'assert';
+import calculateNumber from './0-calcul.js';
 
 describe('calculateNumber', function () {
     it('should return 3 when a=1 and b=2', function () {
