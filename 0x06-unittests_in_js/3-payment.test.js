@@ -8,6 +8,6 @@ describe('sendPaymentRequestToApi', function () {
         const consoleLogSpy = sinon.spy(Utils, 'calculateNumber');
         sendPaymentRequestToApi(100, 20);
         chai.expect(consoleLogSpy.calledWith('SUM', 100, 20)).to.be.true;
-        spy.restore ();
+        consoleLogSpy.restore();
     });
 });
