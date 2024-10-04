@@ -4,8 +4,6 @@ function getPaymentTokenFromAPI(sucess) {
             resolve({
                 data: 'Sucessful response from API'});
         });
-    } else {
-        return;
     }
 }
 
